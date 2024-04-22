@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev_cards",
+    "section": "",
+    "text": "A deck of cards demo of nbdev based on idea from Think Python 2nd Edition from Allen B. Downey.",
+    "crumbs": [
+      "nbdev_cards"
+    ]
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdev_cards",
+    "section": "Install",
+    "text": "Install\nInstall using:\n    pip install nbdev_cards\nor:\n    conda install -c fastai nbdev-cards",
+    "crumbs": [
+      "nbdev_cards"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev_cards",
+    "section": "How to use",
+    "text": "How to use\nthe lib provides a Card class you can use to create, display and compare playing cards:\n\nCard(1,3)\n\n3♥\n\n\n\nsuits\n\n['♠', '♥', '♦', '♣']",
+    "crumbs": [
+      "nbdev_cards"
+    ]
+  },
+  {
+    "objectID": "card.html",
+    "href": "card.html",
+    "title": "Card – A Basic playing card",
+    "section": "",
+    "text": "We will be using numbers to represent playing cards and ranks. There are the ranks:\nsuits\n\n['♠', '♥', '♦', '♣']\nFor instance the suit at index 0 is:\nsuits[0]\n\n'♠'\nranks\n\n[None, 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']\nFor instance the rank at index 1. (note there isn’t a playing card at position 0 since we want the ranks to match the indices where possible.\nranks[1]\n\n'A'\nHere’s an example of creating and displaying a card\nc = Card(suit=1, rank=3)\nc\n\n3♥",
+    "crumbs": [
+      "Card -- A Basic playing card"
+    ]
+  },
+  {
+    "objectID": "card.html#comparison-operators",
+    "href": "card.html#comparison-operators",
+    "title": "Card – A Basic playing card",
+    "section": "Comparison operators",
+    "text": "Comparison operators\nEquality, less than, greater than work on the rank and suit indices\n\n\nCard.__eq__\n\n Card.__eq__ (a:__main__.Card)\n\nReturn self==value.\n\ntest_eq(Card(suit=1, rank=3), Card(suit=1, rank=3))\ntest_ne(Card(suit=2, rank=3), Card(suit=1, rank=3))\ntest_ne(Card(suit=1, rank=2), Card(suit=1, rank=3))\nassert Card(suit=1, rank=3)&lt;Card(suit=2, rank=3)\nassert not Card(suit=1, rank=3)&gt;Card(suit=2, rank=3)",
+    "crumbs": [
+      "Card -- A Basic playing card"
+    ]
+  }
+]
